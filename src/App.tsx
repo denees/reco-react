@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
+import './styles/uikit.min.css';
 import './App.css';
+import { Menu } from "./components/menu/Menu";
+import { Table } from "./components/table/Table";
+import { Drawer } from './components/drawer/Drawer';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="reco-app">
+
+			<h3>App Inventory</h3>
+
+			<Menu></Menu>
+
+			<Table></Table>
+
+			<Drawer></Drawer>
+
+		</div>
+	);
 }
 
 export default App;
